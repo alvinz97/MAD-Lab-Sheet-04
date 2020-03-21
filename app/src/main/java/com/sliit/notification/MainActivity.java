@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this,CHANNEL_ID)
                 .setSmallIcon(R.drawable.ic_launcher_background)
                 .setContentTitle("My notification")
-                .setContentText("getName")
+                .setContentText("getMyName")
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT)
                 .setContentIntent(pendingIntent).setAutoCancel(true);
         NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
