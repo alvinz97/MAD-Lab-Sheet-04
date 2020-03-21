@@ -18,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String CHANNEL_ID = "100CH";
 
+//    EditText myName = (EditText) findViewById(R.id.name);
+//    String getMyName = myName.getText().toString();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,8 +53,8 @@ public class MainActivity extends AppCompatActivity {
         PendingIntent pendingIntent = PendingIntent.getActivity(this,0,intent,0);
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this,CHANNEL_ID)
                 .setSmallIcon(R.drawable.ic_launcher_background)
-                .setContentTitle("My notification")
-                .setContentText("getMyName")
+                .setContentTitle("You've a new Notification ")
+                .setContentText("Click to Register!")
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT)
                 .setContentIntent(pendingIntent).setAutoCancel(true);
         NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
